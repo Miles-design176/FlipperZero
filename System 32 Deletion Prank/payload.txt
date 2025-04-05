@@ -1,13 +1,13 @@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@ INFO:                                         @
-@                                               @
-@ This script simulates a system32 deletion     @         
-@ prank. It downloads a ZIP file from a URL,    @
-@ extracts it to the temporary directory,       @
-@ and runs a PowerShell script from the archive.@
-@                                               @
-@ Created by: milis                             @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+REM @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+REM @ INFO:                                         @
+REM @                                               @
+REM @ This script simulates a system32 deletion     @         
+REM @ prank. It downloads a ZIP file from a URL,    @
+REM @ extracts it to the temporary directory,       @
+REM @ and runs a PowerShell script from the archive.@
+REM @                                               @
+REM @ Created by: milis                             @
+REM @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 
 DELAY 1000
 GUI r
